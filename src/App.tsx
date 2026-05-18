@@ -19,7 +19,10 @@ import {
   Star,
   Award,
   Languages,
+<<<<<<< HEAD
   ChevronRight,
+=======
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
 } from "lucide-react";
 
 // Custom SVG icons for brands
@@ -61,6 +64,7 @@ const SKILLS = [
 const PROJECTS = [
   {
     title: "Map My Campus",
+<<<<<<< HEAD
     shortDesc: "Smart campus navigation system for students, professors, and visitors.",
     fullDesc:
       "A smart campus navigation system designed to help students, professors, and visitors easily navigate inside the university campus. The platform provides interactive maps, building locations, classroom directions, and route guidance to improve accessibility and reduce time spent searching for locations.",
@@ -193,6 +197,50 @@ const PROJECTS = [
       "Worked on preprocessing and filtering",
       "Improved output image quality and performance",
     ],
+=======
+    desc: "Smart campus navigation system for students and visitors.",
+    icon: "🗺️",
+    tags: ["Navigation", "Maps", "Web App"],
+    color: "from-blue-500 to-cyan-500",
+    bg: "bg-blue-500/10",
+    border: "border-blue-500/30",
+  },
+  {
+    title: "Notes Management App",
+    desc: "Application for creating and organizing notes with a modern UI.",
+    icon: "📝",
+    tags: ["React", "CRUD", "UI/UX"],
+    color: "from-purple-500 to-pink-500",
+    bg: "bg-purple-500/10",
+    border: "border-purple-500/30",
+  },
+  {
+    title: "SHARE_IT",
+    desc: "File-sharing system with database integration and advanced SQL queries.",
+    icon: "📁",
+    tags: ["MySQL", "File Sharing", "Backend"],
+    color: "from-green-500 to-emerald-500",
+    bg: "bg-green-500/10",
+    border: "border-green-500/30",
+  },
+  {
+    title: "IoT Project",
+    desc: "Sensor-based monitoring system for fire and gas leak detection.",
+    icon: "🔥",
+    tags: ["IoT", "Sensors", "Python"],
+    color: "from-orange-500 to-red-500",
+    bg: "bg-orange-500/10",
+    border: "border-orange-500/30",
+  },
+  {
+    title: "Cartoon / Image Processing",
+    desc: "Image processing application using computer vision techniques.",
+    icon: "🎨",
+    tags: ["Python", "OpenCV", "Computer Vision"],
+    color: "from-yellow-500 to-orange-500",
+    bg: "bg-yellow-500/10",
+    border: "border-yellow-500/30",
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
   },
 ];
 
@@ -259,6 +307,7 @@ function SkillBar({ skill, delay }: { skill: (typeof SKILLS)[0]; delay: number }
   );
 }
 
+<<<<<<< HEAD
 // ─── PROJECT MODAL ───
 function ProjectModal({
   project,
@@ -399,12 +448,17 @@ function ProjectModal({
   );
 }
 
+=======
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [scrolled, setScrolled] = useState(false);
   const [filterCat, setFilterCat] = useState("All");
+<<<<<<< HEAD
   const [selectedProject, setSelectedProject] = useState<(typeof PROJECTS)[0] | null>(null);
+=======
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
 
   useEffect(() => {
     const onScroll = () => {
@@ -436,14 +490,21 @@ export default function App() {
       className="min-h-screen text-white overflow-x-hidden"
       style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif", background: "#050d1a" }}
     >
+<<<<<<< HEAD
       {/* Project Modal */}
       <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
 
+=======
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
       {/* Animated background */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
         <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-purple-500/8 rounded-full blur-3xl animate-pulse delay-2000" />
+<<<<<<< HEAD
+=======
+        {/* Grid */}
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
         <div
           className="absolute inset-0 opacity-5"
           style={{
@@ -471,6 +532,10 @@ export default function App() {
             <span className="text-cyan-400">/&gt;</span>
           </motion.div>
 
+<<<<<<< HEAD
+=======
+          {/* Desktop nav */}
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
           <div className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((link) => (
               <button
@@ -509,6 +574,10 @@ export default function App() {
           </button>
         </div>
 
+<<<<<<< HEAD
+=======
+        {/* Mobile menu */}
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
         <AnimatePresence>
           {menuOpen && (
             <motion.div
@@ -539,6 +608,10 @@ export default function App() {
         className="relative z-10 min-h-screen flex items-center justify-center px-6 pt-20"
       >
         <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center">
+<<<<<<< HEAD
+=======
+          {/* Text */}
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -564,7 +637,11 @@ export default function App() {
               <span className="text-cyan-400 font-medium">web development</span>,{" "}
               <span className="text-blue-400 font-medium">mobile apps</span>, and{" "}
               <span className="text-purple-400 font-medium">IoT systems</span>. Building modern
+<<<<<<< HEAD
               solutions with React, Flutter &amp; Python.
+=======
+              solutions with React, Flutter & Python.
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
             </p>
 
             <div className="flex flex-wrap gap-4 mb-10">
@@ -583,6 +660,7 @@ export default function App() {
             </div>
 
             <div className="flex items-center gap-6">
+<<<<<<< HEAD
               <a href="https://github.com/mostafabeheiry24" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors"><Github size={22} /></a>
               <a href="https://linkedin.com/in/mostafa-beheiry-639049340" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors"><Linkedin size={22} /></a>
               <a href="mailto:mostafa230105889@sut.edu.eg" className="text-gray-400 hover:text-cyan-400 transition-colors"><Mail size={22} /></a>
@@ -590,6 +668,40 @@ export default function App() {
             </div>
           </motion.div>
 
+=======
+              <a
+                href="https://github.com/mostafabeheiry24"
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <Github size={22} />
+              </a>
+              <a
+                href="https://linkedin.com/in/mostafa-beheiry-639049340"
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-400 hover:text-blue-400 transition-colors"
+              >
+                <Linkedin size={22} />
+              </a>
+              <a
+                href="mailto:mostafa230105889@sut.edu.eg"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
+              >
+                <Mail size={22} />
+              </a>
+              <a
+                href="tel:01550901536"
+                className="text-gray-400 hover:text-green-400 transition-colors"
+              >
+                <Phone size={22} />
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Photo */}
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -597,9 +709,18 @@ export default function App() {
             className="flex justify-center"
           >
             <div className="relative">
+<<<<<<< HEAD
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-400 to-blue-500 blur-2xl opacity-20 scale-110 animate-pulse" />
               <div className="absolute inset-0 rounded-full border-2 border-cyan-400/30 scale-110 animate-spin" style={{ animationDuration: "12s" }} />
               <div className="absolute inset-0 rounded-full border border-blue-400/20 scale-125 animate-spin" style={{ animationDuration: "20s", animationDirection: "reverse" }} />
+=======
+              {/* Glow rings */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-400 to-blue-500 blur-2xl opacity-20 scale-110 animate-pulse" />
+              <div className="absolute inset-0 rounded-full border-2 border-cyan-400/30 scale-110 animate-spin" style={{ animationDuration: "12s" }} />
+              <div className="absolute inset-0 rounded-full border border-blue-400/20 scale-125 animate-spin" style={{ animationDuration: "20s", animationDirection: "reverse" }} />
+
+              {/* Image */}
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
               <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-cyan-400/50 shadow-2xl shadow-cyan-500/20">
                 <img
                   src="/profile.jpg"
@@ -608,18 +729,42 @@ export default function App() {
                   onError={(e) => {
                     const target = e.currentTarget;
                     target.style.display = "none";
+<<<<<<< HEAD
                     target.parentElement!.style.background = "linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%)";
+=======
+                    target.parentElement!.style.background =
+                      "linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%)";
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
                     target.parentElement!.innerHTML = `<div class="w-full h-full flex items-center justify-center text-8xl">👨‍💻</div>`;
                   }}
                 />
               </div>
+<<<<<<< HEAD
               <motion.div animate={{ y: [0, -10, 0] }} transition={{ duration: 3, repeat: Infinity }} className="absolute -top-4 -right-4 bg-[#0a1628] border border-cyan-400/40 rounded-xl px-3 py-2 shadow-xl">
+=======
+
+              {/* Floating badges */}
+              <motion.div
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 3, repeat: Infinity }}
+                className="absolute -top-4 -right-4 bg-[#0a1628] border border-cyan-400/40 rounded-xl px-3 py-2 shadow-xl"
+              >
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
                 <div className="flex items-center gap-2 text-xs">
                   <Code2 size={14} className="text-cyan-400" />
                   <span className="text-white font-medium">React Dev</span>
                 </div>
               </motion.div>
+<<<<<<< HEAD
               <motion.div animate={{ y: [0, 10, 0] }} transition={{ duration: 3.5, repeat: Infinity }} className="absolute -bottom-4 -left-4 bg-[#0a1628] border border-purple-400/40 rounded-xl px-3 py-2 shadow-xl">
+=======
+
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 3.5, repeat: Infinity }}
+                className="absolute -bottom-4 -left-4 bg-[#0a1628] border border-purple-400/40 rounded-xl px-3 py-2 shadow-xl"
+              >
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
                 <div className="flex items-center gap-2 text-xs">
                   <Smartphone size={14} className="text-purple-400" />
                   <span className="text-white font-medium">Flutter Dev</span>
@@ -629,8 +774,24 @@ export default function App() {
           </motion.div>
         </div>
 
+<<<<<<< HEAD
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }} className="absolute bottom-8 left-1/2 -translate-x-1/2">
           <motion.div animate={{ y: [0, 10, 0] }} transition={{ duration: 2, repeat: Infinity }} className="flex flex-col items-center gap-2 text-gray-500 text-xs cursor-pointer" onClick={() => scrollTo("#about")}>
+=======
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        >
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="flex flex-col items-center gap-2 text-gray-500 text-xs cursor-pointer"
+            onClick={() => scrollTo("#about")}
+          >
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
             <span>Scroll Down</span>
             <ChevronDown size={20} />
           </motion.div>
@@ -669,6 +830,7 @@ export default function App() {
       {/* ─── ABOUT ─── */}
       <section id="about" className="relative z-10 py-20 px-6">
         <div className="max-w-7xl mx-auto">
+<<<<<<< HEAD
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-400 text-sm mb-4"><User size={14} /> About Me</div>
             <h2 className="text-4xl md:text-5xl font-bold text-white">Who Am <span className="text-cyan-400">I?</span></h2>
@@ -682,6 +844,41 @@ export default function App() {
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
                 Beyond code, I'm driven by curiosity — exploring IoT systems, computer vision, and real-world engineering problems. I believe great software comes from combining technical depth with thoughtful design.
               </p>
+=======
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-400 text-sm mb-4">
+              <User size={14} /> About Me
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              Who Am <span className="text-cyan-400">I?</span>
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                I'm a{" "}
+                <span className="text-cyan-400 font-semibold">Computer Science student</span> at El
+                Sewedy University of Technology with a passion for building impactful digital
+                solutions. I work across the full stack — from crafting beautiful UIs with React to
+                developing mobile apps with Flutter and backend systems with Python & Node.js.
+              </p>
+              <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                Beyond code, I'm driven by curiosity — exploring IoT systems, computer vision, and
+                real-world engineering problems. I believe great software comes from combining
+                technical depth with thoughtful design.
+              </p>
+
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
               <div className="space-y-4">
                 {[
                   { icon: <GraduationCap size={18} className="text-cyan-400" />, label: "University", value: "El Sewedy University of Technology" },
@@ -690,7 +887,13 @@ export default function App() {
                   { icon: <Languages size={18} className="text-green-400" />, label: "Languages", value: "Arabic (Native), English (Good)" },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-4">
+<<<<<<< HEAD
                     <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">{item.icon}</div>
+=======
+                    <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
+                      {item.icon}
+                    </div>
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
                     <div>
                       <div className="text-xs text-gray-500 uppercase tracking-wider">{item.label}</div>
                       <div className="text-white font-medium">{item.value}</div>
@@ -700,10 +903,24 @@ export default function App() {
               </div>
             </motion.div>
 
+<<<<<<< HEAD
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <div className="bg-gradient-to-br from-white/5 to-white/0 border border-white/10 rounded-2xl p-8 mb-6">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-10 h-10 rounded-xl bg-cyan-400/10 border border-cyan-400/30 flex items-center justify-center"><GraduationCap size={20} className="text-cyan-400" /></div>
+=======
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              {/* Education card */}
+              <div className="bg-gradient-to-br from-white/5 to-white/0 border border-white/10 rounded-2xl p-8 mb-6">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-xl bg-cyan-400/10 border border-cyan-400/30 flex items-center justify-center">
+                    <GraduationCap size={20} className="text-cyan-400" />
+                  </div>
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
                   <h3 className="text-xl font-bold text-white">Education</h3>
                 </div>
                 <div className="border-l-2 border-cyan-400/30 pl-6">
@@ -716,11 +933,25 @@ export default function App() {
                 </div>
               </div>
 
+<<<<<<< HEAD
               <div className="bg-gradient-to-br from-white/5 to-white/0 border border-white/10 rounded-2xl p-8">
                 <h3 className="text-lg font-bold text-white mb-4">Interests &amp; Focus Areas</h3>
                 <div className="flex flex-wrap gap-3">
                   {["Web Development", "Mobile Apps", "IoT Systems", "Computer Vision", "Problem Solving", "Software Engineering", "UI/UX Design", "Databases"].map((tag) => (
                     <span key={tag} className="px-3 py-1.5 rounded-lg bg-cyan-400/10 border border-cyan-400/20 text-cyan-300 text-sm font-medium">{tag}</span>
+=======
+              {/* Interest tags */}
+              <div className="bg-gradient-to-br from-white/5 to-white/0 border border-white/10 rounded-2xl p-8">
+                <h3 className="text-lg font-bold text-white mb-4">Interests & Focus Areas</h3>
+                <div className="flex flex-wrap gap-3">
+                  {["Web Development", "Mobile Apps", "IoT Systems", "Computer Vision", "Problem Solving", "Software Engineering", "UI/UX Design", "Databases"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-3 py-1.5 rounded-lg bg-cyan-400/10 border border-cyan-400/20 text-cyan-300 text-sm font-medium"
+                    >
+                      {tag}
+                    </span>
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
                   ))}
                 </div>
               </div>
@@ -732,11 +963,29 @@ export default function App() {
       {/* ─── SKILLS ─── */}
       <section id="skills" className="relative z-10 py-20 px-6">
         <div className="max-w-7xl mx-auto">
+<<<<<<< HEAD
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-400 text-sm mb-4"><Code2 size={14} /> Technical Skills</div>
             <h2 className="text-4xl md:text-5xl font-bold text-white">My <span className="text-cyan-400">Tech Stack</span></h2>
           </motion.div>
 
+=======
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-400 text-sm mb-4">
+              <Code2 size={14} /> Technical Skills
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              My <span className="text-cyan-400">Tech Stack</span>
+            </h2>
+          </motion.div>
+
+          {/* Filter */}
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             {["All", ...TECH_CATEGORIES.map((c) => c.label)].map((cat) => (
               <button
@@ -753,6 +1002,7 @@ export default function App() {
             ))}
           </div>
 
+<<<<<<< HEAD
           <div className="grid md:grid-cols-2 gap-8">
             <div>{filteredSkills.slice(0, Math.ceil(filteredSkills.length / 2)).map((skill, i) => (<SkillBar key={skill.name} skill={skill} delay={i * 0.1} />))}</div>
             <div>{filteredSkills.slice(Math.ceil(filteredSkills.length / 2)).map((skill, i) => (<SkillBar key={skill.name} skill={skill} delay={i * 0.1} />))}</div>
@@ -763,6 +1013,38 @@ export default function App() {
             <div className="flex flex-wrap justify-center gap-3">
               {["Git", "REST APIs", "Tailwind CSS", "Firebase", "Arduino", "Linux", "VS Code", "Figma"].map((tech) => (
                 <span key={tech} className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-gray-300 text-sm hover:border-cyan-400/30 hover:text-white transition-all">{tech}</span>
+=======
+          {/* Skills Grid */}
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              {filteredSkills.slice(0, Math.ceil(filteredSkills.length / 2)).map((skill, i) => (
+                <SkillBar key={skill.name} skill={skill} delay={i * 0.1} />
+              ))}
+            </div>
+            <div>
+              {filteredSkills.slice(Math.ceil(filteredSkills.length / 2)).map((skill, i) => (
+                <SkillBar key={skill.name} skill={skill} delay={i * 0.1} />
+              ))}
+            </div>
+          </div>
+
+          {/* Tech pills */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-16 text-center"
+          >
+            <h3 className="text-gray-400 text-sm uppercase tracking-wider mb-6">Also experienced with</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {["Git", "REST APIs", "Tailwind CSS", "Firebase", "Arduino", "Linux", "VS Code", "Figma"].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-gray-300 text-sm hover:border-cyan-400/30 hover:text-white transition-all"
+                >
+                  {tech}
+                </span>
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
               ))}
             </div>
           </motion.div>
@@ -772,11 +1054,28 @@ export default function App() {
       {/* ─── PROJECTS ─── */}
       <section id="projects" className="relative z-10 py-20 px-6">
         <div className="max-w-7xl mx-auto">
+<<<<<<< HEAD
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-400 text-sm mb-4"><Layers size={14} /> Portfolio</div>
             <h2 className="text-4xl md:text-5xl font-bold text-white">My <span className="text-cyan-400">Projects</span></h2>
             <p className="text-gray-400 mt-4 max-w-xl mx-auto">
               A collection of projects spanning web, mobile, IoT, and computer vision. Click any card to see full details.
+=======
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-400 text-sm mb-4">
+              <Layers size={14} /> Portfolio
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              My <span className="text-cyan-400">Projects</span>
+            </h2>
+            <p className="text-gray-400 mt-4 max-w-xl mx-auto">
+              A collection of projects spanning web, mobile, IoT, and computer vision domains.
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
             </p>
           </motion.div>
 
@@ -789,14 +1088,21 @@ export default function App() {
                 transition={{ delay: i * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -8 }}
+<<<<<<< HEAD
                 onClick={() => setSelectedProject(project)}
                 className={`group relative rounded-2xl border ${project.border} ${project.bg} ${project.hoverBorder} p-6 cursor-pointer transition-all duration-300 hover:shadow-2xl overflow-hidden`}
               >
+=======
+                className={`group relative rounded-2xl border ${project.border} ${project.bg} p-6 cursor-pointer transition-all duration-300 hover:shadow-2xl overflow-hidden`}
+              >
+                {/* Gradient overlay on hover */}
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-2xl`} />
 
                 <div className="relative z-10">
                   <div className="text-5xl mb-4">{project.icon}</div>
 
+<<<<<<< HEAD
                   <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
                     {project.title}
                   </h3>
@@ -825,14 +1131,58 @@ export default function App() {
                   <div className="flex items-center gap-2 text-xs text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-medium">
                     <span>View Details</span>
                     <ChevronRight size={13} />
+=======
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                    {project.title}
+                  </h3>
+
+                  <p className="text-gray-400 text-sm leading-relaxed mb-6">{project.desc}</p>
+
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-2.5 py-1 bg-white/5 border border-white/10 rounded-md text-xs text-gray-300"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex items-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a
+                      href="https://github.com/mostafabeheiry24"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1.5 text-xs text-gray-300 hover:text-white transition-colors"
+                    >
+                      <Github size={14} /> View Code
+                    </a>
+                    <ExternalLink size={14} className="text-gray-500" />
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
                   </div>
                 </div>
               </motion.div>
             ))}
           </div>
 
+<<<<<<< HEAD
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-center mt-12">
             <a href="https://github.com/mostafabeheiry24" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 text-white rounded-xl hover:bg-white/5 transition-all font-medium">
+=======
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-center mt-12"
+          >
+            <a
+              href="https://github.com/mostafabeheiry24"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 text-white rounded-xl hover:bg-white/5 transition-all font-medium"
+            >
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
               <Github size={18} /> View All on GitHub
             </a>
           </motion.div>
@@ -842,6 +1192,7 @@ export default function App() {
       {/* ─── EXPERIENCE ─── */}
       <section id="experience" className="relative z-10 py-20 px-6">
         <div className="max-w-4xl mx-auto">
+<<<<<<< HEAD
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-400 text-sm mb-4"><Briefcase size={14} /> Work History</div>
             <h2 className="text-4xl md:text-5xl font-bold text-white">My <span className="text-cyan-400">Experience</span></h2>
@@ -852,37 +1203,127 @@ export default function App() {
 
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative pl-20 pb-12">
               <div className="absolute left-6 top-1 w-4 h-4 rounded-full bg-cyan-400 border-4 border-[#050d1a] shadow-lg shadow-cyan-400/50" />
+=======
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-400 text-sm mb-4">
+              <Briefcase size={14} /> Work History
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              My <span className="text-cyan-400">Experience</span>
+            </h2>
+          </motion.div>
+
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-400 via-blue-400 to-transparent" />
+
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative pl-20 pb-12"
+            >
+              {/* Dot */}
+              <div className="absolute left-6 top-1 w-4 h-4 rounded-full bg-cyan-400 border-4 border-[#050d1a] shadow-lg shadow-cyan-400/50" />
+
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
               <div className="bg-gradient-to-br from-white/5 to-white/0 border border-white/10 rounded-2xl p-8 hover:border-cyan-400/30 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
                   <div>
                     <h3 className="text-xl font-bold text-white">IT Summer Internship</h3>
                     <div className="text-cyan-400 font-medium mt-1">El Sewedy Polymers</div>
                   </div>
+<<<<<<< HEAD
                   <span className="flex-shrink-0 px-3 py-1.5 rounded-lg bg-cyan-400/10 border border-cyan-400/20 text-cyan-300 text-sm font-medium">Summer 2025</span>
                 </div>
                 <p className="text-gray-400 leading-relaxed mb-4">Completed a Summer Internship in the IT Department at El Sewedy Polymers in partnership with SU Tech. Gained hands-on experience in real-world IT operations within an industrial manufacturing environment.</p>
                 <div className="flex flex-wrap gap-2">
                   {["IT Operations", "Industrial IT", "Networking", "Systems Management"].map((tag) => (
                     <span key={tag} className="px-2.5 py-1 bg-white/5 border border-white/10 rounded-md text-xs text-gray-300">{tag}</span>
+=======
+                  <div className="flex-shrink-0">
+                    <span className="px-3 py-1.5 rounded-lg bg-cyan-400/10 border border-cyan-400/20 text-cyan-300 text-sm font-medium">
+                      Summer 2025
+                    </span>
+                  </div>
+                </div>
+
+                <p className="text-gray-400 leading-relaxed mb-4">
+                  Completed a Summer Internship in the IT Department at El Sewedy Polymers in
+                  partnership with SU Tech. Gained hands-on experience in real-world IT operations
+                  within an industrial manufacturing environment.
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  {["IT Operations", "Industrial IT", "Networking", "Systems Management"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2.5 py-1 bg-white/5 border border-white/10 rounded-md text-xs text-gray-300"
+                    >
+                      {tag}
+                    </span>
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
                   ))}
                 </div>
               </div>
             </motion.div>
 
+<<<<<<< HEAD
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }} viewport={{ once: true }} className="relative pl-20">
               <div className="absolute left-6 top-1 w-4 h-4 rounded-full bg-blue-400 border-4 border-[#050d1a] shadow-lg shadow-blue-400/50" />
+=======
+            {/* Education timeline item */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+              viewport={{ once: true }}
+              className="relative pl-20"
+            >
+              <div className="absolute left-6 top-1 w-4 h-4 rounded-full bg-blue-400 border-4 border-[#050d1a] shadow-lg shadow-blue-400/50" />
+
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
               <div className="bg-gradient-to-br from-white/5 to-white/0 border border-white/10 rounded-2xl p-8 hover:border-blue-400/30 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
                   <div>
                     <h3 className="text-xl font-bold text-white">Bachelor of Computer Science</h3>
                     <div className="text-blue-400 font-medium mt-1">El Sewedy University of Technology</div>
                   </div>
+<<<<<<< HEAD
                   <span className="flex-shrink-0 px-3 py-1.5 rounded-lg bg-blue-400/10 border border-blue-400/20 text-blue-300 text-sm font-medium">2023 – 2027</span>
                 </div>
                 <p className="text-gray-400 leading-relaxed mb-4">Currently pursuing a Bachelor's degree in Computer Science with a GPA of 2.7. Studying core subjects including algorithms, data structures, databases, software engineering, and computer networks.</p>
                 <div className="flex flex-wrap gap-2">
                   {["Algorithms", "Data Structures", "Databases", "Software Engineering", "Networks"].map((tag) => (
                     <span key={tag} className="px-2.5 py-1 bg-white/5 border border-white/10 rounded-md text-xs text-gray-300">{tag}</span>
+=======
+                  <div className="flex-shrink-0">
+                    <span className="px-3 py-1.5 rounded-lg bg-blue-400/10 border border-blue-400/20 text-blue-300 text-sm font-medium">
+                      2023 – 2027
+                    </span>
+                  </div>
+                </div>
+
+                <p className="text-gray-400 leading-relaxed mb-4">
+                  Currently pursuing a Bachelor's degree in Computer Science with a GPA of 2.7.
+                  Studying core subjects including algorithms, data structures, databases, software
+                  engineering, and computer networks.
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                  {["Algorithms", "Data Structures", "Databases", "Software Engineering", "Networks"].map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-2.5 py-1 bg-white/5 border border-white/10 rounded-md text-xs text-gray-300"
+                    >
+                      {tag}
+                    </span>
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
                   ))}
                 </div>
               </div>
@@ -894,18 +1335,72 @@ export default function App() {
       {/* ─── CONTACT ─── */}
       <section id="contact" className="relative z-10 py-20 px-6">
         <div className="max-w-4xl mx-auto">
+<<<<<<< HEAD
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-400 text-sm mb-4"><Mail size={14} /> Get In Touch</div>
             <h2 className="text-4xl md:text-5xl font-bold text-white">Let's <span className="text-cyan-400">Connect</span></h2>
             <p className="text-gray-400 mt-4 max-w-lg mx-auto">I'm open to internships, collaborations, and exciting new opportunities. Let's build something great together!</p>
+=======
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-gray-400 text-sm mb-4">
+              <Mail size={14} /> Get In Touch
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              Let's <span className="text-cyan-400">Connect</span>
+            </h2>
+            <p className="text-gray-400 mt-4 max-w-lg mx-auto">
+              I'm open to internships, collaborations, and exciting new opportunities. Let's build
+              something great together!
+            </p>
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {[
+<<<<<<< HEAD
               { icon: <Mail size={22} className="text-cyan-400" />, label: "Email", value: "mostafa230105889@sut.edu.eg", href: "mailto:mostafa230105889@sut.edu.eg", bg: "bg-cyan-400/10", border: "border-cyan-400/20" },
               { icon: <Phone size={22} className="text-green-400" />, label: "Phone", value: "01550901536", href: "tel:01550901536", bg: "bg-green-400/10", border: "border-green-400/20" },
               { icon: <Linkedin size={22} className="text-blue-400" />, label: "LinkedIn", value: "mostafa-beheiry-639049340", href: "https://linkedin.com/in/mostafa-beheiry-639049340", bg: "bg-blue-400/10", border: "border-blue-400/20" },
               { icon: <Github size={22} className="text-purple-400" />, label: "GitHub", value: "mostafabeheiry24", href: "https://github.com/mostafabeheiry24", bg: "bg-purple-400/10", border: "border-purple-400/20" },
+=======
+              {
+                icon: <Mail size={22} className="text-cyan-400" />,
+                label: "Email",
+                value: "mostafa230105889@sut.edu.eg",
+                href: "mailto:mostafa230105889@sut.edu.eg",
+                bg: "bg-cyan-400/10",
+                border: "border-cyan-400/20",
+              },
+              {
+                icon: <Phone size={22} className="text-green-400" />,
+                label: "Phone",
+                value: "01550901536",
+                href: "tel:01550901536",
+                bg: "bg-green-400/10",
+                border: "border-green-400/20",
+              },
+              {
+                icon: <Linkedin size={22} className="text-blue-400" />,
+                label: "LinkedIn",
+                value: "mostafa-beheiry-639049340",
+                href: "https://linkedin.com/in/mostafa-beheiry-639049340",
+                bg: "bg-blue-400/10",
+                border: "border-blue-400/20",
+              },
+              {
+                icon: <Github size={22} className="text-purple-400" />,
+                label: "GitHub",
+                value: "mostafabeheiry24",
+                href: "https://github.com/mostafabeheiry24",
+                bg: "bg-purple-400/10",
+                border: "border-purple-400/20",
+              },
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
             ].map((item, i) => (
               <motion.a
                 key={i}
@@ -919,21 +1414,52 @@ export default function App() {
                 whileHover={{ scale: 1.03 }}
                 className={`flex items-center gap-4 p-6 rounded-2xl border ${item.border} ${item.bg} hover:brightness-110 transition-all duration-300 group`}
               >
+<<<<<<< HEAD
                 <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0">{item.icon}</div>
                 <div>
                   <div className="text-xs text-gray-500 uppercase tracking-wider">{item.label}</div>
                   <div className="text-white font-medium group-hover:text-cyan-400 transition-colors break-all">{item.value}</div>
+=======
+                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center flex-shrink-0">
+                  {item.icon}
+                </div>
+                <div>
+                  <div className="text-xs text-gray-500 uppercase tracking-wider">{item.label}</div>
+                  <div className="text-white font-medium group-hover:text-cyan-400 transition-colors break-all">
+                    {item.value}
+                  </div>
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
                 </div>
                 <ExternalLink size={16} className="text-gray-600 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
               </motion.a>
             ))}
           </div>
 
+<<<<<<< HEAD
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-purple-500/10 border border-white/10 rounded-2xl p-10 text-center">
             <div className="text-5xl mb-4">🚀</div>
             <h3 className="text-2xl font-bold text-white mb-3">Ready to Collaborate?</h3>
             <p className="text-gray-400 mb-6 max-w-md mx-auto">Whether you have a project idea, an opportunity, or just want to chat about tech — my inbox is always open.</p>
             <a href="mailto:mostafa230105889@sut.edu.eg" className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-xl font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-cyan-500/25">
+=======
+          {/* CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-purple-500/10 border border-white/10 rounded-2xl p-10 text-center"
+          >
+            <div className="text-5xl mb-4">🚀</div>
+            <h3 className="text-2xl font-bold text-white mb-3">Ready to Collaborate?</h3>
+            <p className="text-gray-400 mb-6 max-w-md mx-auto">
+              Whether you have a project idea, an opportunity, or just want to chat about tech — my
+              inbox is always open.
+            </p>
+            <a
+              href="mailto:mostafa230105889@sut.edu.eg"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-xl font-semibold hover:opacity-90 transition-opacity shadow-lg shadow-cyan-500/25"
+            >
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
               <Mail size={18} /> Send Me an Email
             </a>
           </motion.div>
@@ -943,16 +1469,37 @@ export default function App() {
       {/* ─── FOOTER ─── */}
       <footer className="relative z-10 border-t border-white/10 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+<<<<<<< HEAD
           <div className="text-gray-500 text-sm">© 2025 Mostafa Mohamed Beheiry. Built with React &amp; ❤️</div>
+=======
+          <div className="text-gray-500 text-sm">
+            © 2025 Mostafa Mohamed Beheiry. Built with React & ❤️
+          </div>
+
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
           <div className="flex items-center gap-3 text-xl font-bold">
             <span className="text-cyan-400">&lt;</span>
             <span className="text-white">MB</span>
             <span className="text-cyan-400">/&gt;</span>
           </div>
+<<<<<<< HEAD
           <div className="flex items-center gap-4">
             <a href="https://github.com/mostafabeheiry24" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-white transition-colors"><Github size={18} /></a>
             <a href="https://linkedin.com/in/mostafa-beheiry-639049340" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-blue-400 transition-colors"><Linkedin size={18} /></a>
             <a href="mailto:mostafa230105889@sut.edu.eg" className="text-gray-500 hover:text-cyan-400 transition-colors"><Mail size={18} /></a>
+=======
+
+          <div className="flex items-center gap-4">
+            <a href="https://github.com/mostafabeheiry24" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-white transition-colors">
+              <Github size={18} />
+            </a>
+            <a href="https://linkedin.com/in/mostafa-beheiry-639049340" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-blue-400 transition-colors">
+              <Linkedin size={18} />
+            </a>
+            <a href="mailto:mostafa230105889@sut.edu.eg" className="text-gray-500 hover:text-cyan-400 transition-colors">
+              <Mail size={18} />
+            </a>
+>>>>>>> b96a140cf5f82e56e02d3c0082bb0629ef0dd0c4
           </div>
         </div>
       </footer>
